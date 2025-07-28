@@ -1,0 +1,20 @@
+python cyber_deception_poc/decoy_app.py
+http://127.0.0.1:5000/admin
+http://192.168.1.29:5000/admin
+admin
+Admin@123
+
+python cyber_deception_poc/real_admin_app.py
+http://127.0.0.1:5001/secure-admin
+http://192.168.1.29:5001/secure-admin
+admin
+securePass123
+
+
+python cyber_deception_poc/security_dashboard.py
+http://127.0.0.1:5002/
+http://192.168.1.29:5002/
+
+python cyber_deception_poc/init_db.py
+
+http://localhost:8025
